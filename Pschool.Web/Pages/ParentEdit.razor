@@ -1,71 +1,91 @@
 ﻿@page "/parents/edit/{ParentId:int}"
 @inject HttpClient Http
+@using Pschool.Web.Models
+@using Microsoft.AspNetCore.Components.Forms
 
-<h3>Edit Parent</h3>
-<form class="row">
+<h3>Edit Parent</h3><hr />
+<EditForm Model="@parent" OnValidSubmit="UpdateParent" class="row">
+    @*<ValidationSummary />*@
+    <DataAnnotationsValidator />
     <div class="col-md-4">
         <div class="form-group">
             <label for="FirstName">First Name</label>
             <input class="form-control" id="FirstName" @bind="parent.FirstName" />
+            <ValidationMessage For="@(() => parent.FirstName)">First name is required.</ValidationMessage>
         </div>
     </div>
     <div class="col-md-4">
         <div class="form-group">
             <label for="LastName">Last Name</label>
             <input class="form-control" id="LastName" @bind="parent.LastName" />
+            <ValidationMessage For="@(() => parent.LastName)" />
         </div>
     </div>
     <div class="col-md-4">
         <div class="form-group">
             <label for="UserName">Username</label>
             <input class="form-control" id="UserName" @bind="parent.UserName" />
+            <ValidationMessage For="@(() => parent.UserName)" />
         </div>
     </div>
     <div class="col-md-4">
         <div class="form-group">
             <label for="Email">Email</label>
             <input class="form-control" id="Email" @bind="parent.Email" />
+            <ValidationMessage For="@(() => parent.Email)" />
         </div>
     </div>
     <div class="col-md-4">
         <div class="form-group">
             <label for="HomeAddress">Home Address</label>
             <input class="form-control" id="HomeAddress" @bind="parent.HomeAddress" />
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label for="Phone1">Phone 1</label>
-            <input class="form-control" id="Phone1" @bind="parent.Phone1" />
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label for="WorkPhone">Work Phone</label>
-            <input class="form-control" id="WorkPhone" @bind="parent.WorkPhone" />
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label for="HomePhone">Home Phone</label>
-            <input class="form-control" id="HomePhone" @bind="parent.HomePhone" />
+            <ValidationMessage For="@(() => parent.HomeAddress)" />
         </div>
     </div>
     <div class="col-md-4">
         <div class="form-group">
             <label for="BirthDate">Birth Date</label>
             <input type="date" class="form-control" id="BirthDate" @bind="parent.BirthDate" />
+            <ValidationMessage For="@(() => parent.BirthDate)" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Phone1">Phone 1</label>
+            <input class="form-control" id="Phone1" @bind="parent.Phone1" />
+            <ValidationMessage For="@(() => parent.Phone1)" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="WorkPhone">Work Phone</label>
+            <input class="form-control" id="WorkPhone" @bind="parent.WorkPhone" />
+            <ValidationMessage For="@(() => parent.WorkPhone)" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="HomePhone">Home Phone</label>
+            <input class="form-control" id="HomePhone" @bind="parent.HomePhone" />
+            <ValidationMessage For="@(() => parent.HomePhone)" />
         </div>
     </div>
 
     <div class="col-md-12 mt-3">
-        <button type="button" @onclick="UpdateParent" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary">Save</button>
         <button @onclick="Cancel" class="btn btn-secondary">Cancel</button>
     </div>
-</form>
+</EditForm>
 
 @code {
     private Parent parent = new Parent();
+    private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        parent = new Parent();
+        editContext = new EditContext(parent);
+    }
 
     [Parameter]
     public int ParentId { get; set; }
@@ -101,19 +121,5 @@
     private void Cancel()
     {
         NavigationManager.NavigateTo("/parents");
-    }
-
-    public class Parent
-    {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string? UserName { get; set; }
-        public string? Email { get; set; }
-        public string? HomeAddress { get; set; }
-        public string? Phone1 { get; set; }
-        public string? WorkPhone { get; set; }
-        public string? HomePhone { get; set; }
-        public DateTime? BirthDate { get; set; }
     }
 }

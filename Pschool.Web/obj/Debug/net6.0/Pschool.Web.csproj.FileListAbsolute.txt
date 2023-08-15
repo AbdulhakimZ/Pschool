@@ -818,6 +818,7 @@ C:\Users\Lucky\Documents\angular_project\NEO\Pschool.Web\obj\Debug\net6.0\Pschoo
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool.Web\obj\Debug\net6.0\refint\Pschool.Web.dll
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool.Web\obj\Debug\net6.0\Pschool.Web.pdb
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool.Web\obj\Debug\net6.0\ref\Pschool.Web.dll
+C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.16.ywfc40vyap.js
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
@@ -855,6 +856,8 @@ C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Registry.dll
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\mscorlib.dll
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll
+C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.dll
+C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.pdb
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.AppContext.dll
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Concurrent.dll
@@ -1030,6 +1033,7 @@ C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Private.Uri.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Configuration.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Parallel.dll.gz
+C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.pdb.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Globalization.Extensions.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Globalization.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.ZipFile.dll.gz
@@ -1054,6 +1058,7 @@ C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Options.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encoding.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Net.Mail.dll.gz
+C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Handles.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encodings.Web.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll.gz
@@ -1212,11 +1217,6 @@ C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Process.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Net.Sockets.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\System.Numerics.dll.gz
-C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
-C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.dll
-C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.pdb
-C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.pdb.gz
-C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\wwwroot\_framework\Pschool.Web.dll.gz
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\Pschool.Web.staticwebassets.runtime.json
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\Pschool.Web.dll
 C:\Users\Lucky\Documents\angular_project\NEO\Pschool\Pschool.Web\bin\Debug\net6.0\Pschool.Web.pdb

@@ -1,9 +1,10 @@
 ﻿@using Microsoft.JSInterop
+@using Pschool.Web.Models;
 @inject IJSRuntime JSRuntime
 @page "/parents"
 @inject HttpClient Http
 
-<h3>Parents List</h3>
+<h3>Parents</h3><hr />
 
 @if (parents == null)
 {
@@ -11,15 +12,19 @@
 }
 else
 {
-       <NavLink class="nav-link" href="ParentCreate">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Create Parent
-            </NavLink>
+    <NavLink style="float:right" class="btn btn-success" href="parents/create">Add Parent <span class="oi oi-plus" aria-hidden="true"></span></NavLink>
     <table class="table">
         <thead>
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Students</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Home Address</th>
+                <th>Phone 1</th>
+                <th>Work Phone</th>
+                <th>Home Phone</th>
+                <th>Siblings</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -29,15 +34,22 @@ else
                 <tr>
                     <td>@parent.FirstName</td>
                     <td>@parent.LastName</td>
-                    <td>
+                    <td>@parent.UserName</td>
+                    <td>@parent.Email</td>
+                    <td>@parent.HomeAddress</td>
+                    <td>@parent.Phone1</td>
+                    <td>@parent.WorkPhone</td>
+                    <td>@parent.HomePhone</td>
+                    <td>@parent.Students?.Count()</td>
+               @*     <td>
                         @foreach (var student in parent.Students)
                         {
                             @student.FirstName @student.LastName<br />
                         }
-                    </td>
+                    </td>*@
                     <td>
-                        <button @onclick="() => EditParent(parent.Id)">Edit</button>
-                        <button @onclick="() => DeleteParent(parent.Id)">Delete</button>
+                        <i @onclick="() => EditParent(parent.Id)" class="oi oi-pencil"></i>
+                        <i @onclick="() => DeleteParent(parent.Id)" class="oi oi-trash"></i>
                     </td>
                 </tr>
             }
@@ -67,45 +79,20 @@ else
 
     private async Task DeleteParent(int parentId)
     {
-        // Send a DELETE request to the API to delete the parent
-        var response = await httpClient.DeleteAsync($"api/Parent/{parentId}");
+        bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", "Are you sure you want to delete this parent?");
 
-        if (response.IsSuccessStatusCode)
+        if (confirmed)
         {
-            // Refresh the parents list
-            parents = await httpClient.GetFromJsonAsync<List<Parent>>("api/Parent");
-        }
-        else
-        {
-            // Handle error
+            var response = await httpClient.DeleteAsync($"api/Parent/{parentId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                parents = await httpClient.GetFromJsonAsync<List<Parent>>("api/Parent");
+            }
+            else
+            {
+                // Handle error
+            }
         }
     }
-        public class Parent
-        {
-            public int Id { get; set; }
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string UserName { get; set; }
-            public string Email { get; set; }
-            public string HomeAddress { get; set; }
-            public string Phone1 { get; set; }
-            public string WorkPhone { get; set; }
-            public string HomePhone { get; set; }
-            public DateTime BirthDate { get; set; }
-
-            public ICollection<Student> Students { get; set; } = new List<Student>();
-        }
-        public class Student
-        {
-            public int Id { get; set; }
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Email { get; set; }
-            public string UserName { get; set; }
-            public string Phone { get; set; }
-            public DateTime BirthDate { get; set; }
-            public int ParentId { get; set; }
-
-            public Parent Parent { get; set; }
-        }
 }

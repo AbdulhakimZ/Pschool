@@ -24,10 +24,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lucky/Documents/angular_project/NEO/Pschool/Pschool.Web/Pages/EditParent.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFBhcmVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Lucky/Documents/angular_project/NEO/Pschool/Pschool.Web/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lucky/Documents/angular_project/NEO/Pschool/Pschool.Web/Pages/ParentCreate.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50Q3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucky/Documents/angular_project/NEO/Pschool/Pschool.Web/Pages/ParentEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50RWRpdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lucky/Documents/angular_project/NEO/Pschool/Pschool.Web/Pages/ParentsList.razor]
