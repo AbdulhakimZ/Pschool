@@ -1,0 +1,133 @@
+﻿@page "/parents/create"
+
+<h3>Create New Parent</h3>
+<form class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <input class="form-control" id="FirstName" @bind="parent.FirstName" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input class="form-control" id="LastName" @bind="parent.LastName" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="UserName">Username</label>
+            <input class="form-control" id="UserName" @bind="parent.UserName" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input class="form-control" id="Email" @bind="parent.Email" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="HomeAddress">Home Address</label>
+            <input class="form-control" id="HomeAddress" @bind="parent.HomeAddress" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Phone1">Phone 1</label>
+            <input class="form-control" id="Phone1" @bind="parent.Phone1" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="WorkPhone">Work Phone</label>
+            <input class="form-control" id="WorkPhone" @bind="parent.WorkPhone" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="HomePhone">Home Phone</label>
+            <input class="form-control" id="HomePhone" @bind="parent.HomePhone" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="BirthDate">Birth Date</label>
+            <input type="date" class="form-control" id="BirthDate" @bind="parent.BirthDate" />
+        </div>
+    </div>
+
+    <div class="col-md-12 mt-3">
+        <button type="button" @onclick="Create" class="btn btn-primary">Save</button>
+        <button @onclick="Cancel" class="btn btn-secondary">Cancel</button>
+    </div>
+</form>
+
+@code {
+    private Parent parent = new Parent();
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    private HttpClient httpClient { get; set; }
+    private async Task Create()
+    {
+        //var validationResults = new List<ValidationResult>();
+        //var validationContext = new ValidationContext(parent);
+        //bool isValid = Validator.TryValidateObject(parent, validationContext, validationResults, true);
+
+        //if (isValid)
+        {
+            //Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(parent));
+            var httpClient = new HttpClient();
+            var response = await httpClient.PostAsJsonAsync("https://localhost:7130/api/Parent", parent);
+            if (response.IsSuccessStatusCode)
+            {
+                NavigationManager.NavigateTo("/parents");
+            }
+            else
+            {
+                // Handle error scenario, e.g., show an error message to the user
+            }
+        }
+        //else
+        //{
+        //    // Handle validation errors, display validation messages to the user
+        //}
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/parents");
+    }
+
+    public class Parent
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        public string HomeAddress { get; set; }
+        public string Phone1 { get; set; }
+        public string WorkPhone { get; set; }
+        public string HomePhone { get; set; }
+        public DateTime BirthDate { get; set; }
+
+        public ICollection<Student> Students { get; set; } = new List<Student>();
+    }
+    public class Student
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string UserName { get; set; }
+        public string Phone { get; set; }
+        public DateTime BirthDate { get; set; }
+        public int ParentId { get; set; }
+
+        public Parent Parent { get; set; }
+    }
+}

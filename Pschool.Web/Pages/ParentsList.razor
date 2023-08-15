@@ -1,0 +1,111 @@
+﻿@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+@page "/parents"
+@inject HttpClient Http
+
+<h3>Parents List</h3>
+
+@if (parents == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+       <NavLink class="nav-link" href="ParentCreate">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Create Parent
+            </NavLink>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Students</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var parent in parents)
+            {
+                <tr>
+                    <td>@parent.FirstName</td>
+                    <td>@parent.LastName</td>
+                    <td>
+                        @foreach (var student in parent.Students)
+                        {
+                            @student.FirstName @student.LastName<br />
+                        }
+                    </td>
+                    <td>
+                        <button @onclick="() => EditParent(parent.Id)">Edit</button>
+                        <button @onclick="() => DeleteParent(parent.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Parent> parents;
+    
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+    [Inject]
+    private HttpClient httpClient { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch parents data from the API
+        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7130/weatherforecast");
+        parents = await Http.GetFromJsonAsync<List<Parent>>("/api/Parent");
+    }
+
+    private void EditParent(int parentId)
+    {
+        NavigationManager.NavigateTo($"/parents/edit/{parentId}");
+    }
+
+    private async Task DeleteParent(int parentId)
+    {
+        // Send a DELETE request to the API to delete the parent
+        var response = await httpClient.DeleteAsync($"api/Parent/{parentId}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Refresh the parents list
+            parents = await httpClient.GetFromJsonAsync<List<Parent>>("api/Parent");
+        }
+        else
+        {
+            // Handle error
+        }
+    }
+        public class Parent
+        {
+            public int Id { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string UserName { get; set; }
+            public string Email { get; set; }
+            public string HomeAddress { get; set; }
+            public string Phone1 { get; set; }
+            public string WorkPhone { get; set; }
+            public string HomePhone { get; set; }
+            public DateTime BirthDate { get; set; }
+
+            public ICollection<Student> Students { get; set; } = new List<Student>();
+        }
+        public class Student
+        {
+            public int Id { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string Email { get; set; }
+            public string UserName { get; set; }
+            public string Phone { get; set; }
+            public DateTime BirthDate { get; set; }
+            public int ParentId { get; set; }
+
+            public Parent Parent { get; set; }
+        }
+}
