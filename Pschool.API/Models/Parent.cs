@@ -4,6 +4,10 @@ namespace Pschool.API.Models
 {
     public class Parent
     {
+        public Parent()
+        {
+            Students = new HashSet<Student>();
+        }
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -15,6 +19,6 @@ namespace Pschool.API.Models
         public string? HomePhone { get; set; }
         public DateTime? BirthDate { get; set; }
 
-        public ICollection<Student> Students { get; set; } = new List<Student>();
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

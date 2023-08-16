@@ -1,0 +1,85 @@
+﻿@using Microsoft.JSInterop
+@using Pschool.Web.Models;
+@inject IJSRuntime JSRuntime
+@page "/students"
+@inject HttpClient Http
+
+<h3>Students</h3><hr />
+
+@if (students == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <NavLink style="float:right" class="btn btn-success" href="students/create">Add Student <span class="oi oi-plus" aria-hidden="true"></span></NavLink>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Parent</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in students)
+            {
+                <tr>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@student.UserName</td>
+                    <td>@student.Email</td>
+                    <td>@student.Parent?.FirstName @student.Parent?.LastName</td>
+                    <td>@student.Phone</td>
+                    <td>
+                        <i @onclick="() => EditStudent(student.Id)" class="oi oi-pencil"></i>
+                        <i @onclick="() => DeleteStudent(student.Id)" class="oi oi-trash"></i>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Student> students;
+    
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+    [Inject]
+    private HttpClient httpClient { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch students data from the API
+        students = await Http.GetFromJsonAsync<List<Student>>("/api/Student");
+    }
+
+    private void EditStudent(int studentId)
+    {
+        NavigationManager.NavigateTo($"/students/edit/{studentId}");
+    }
+
+    private async Task DeleteStudent(int studentId)
+    {
+        bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", "Are you sure you want to delete this student?");
+
+        if (confirmed)
+        {
+            var response = await httpClient.DeleteAsync($"api/Student/{studentId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                students = await httpClient.GetFromJsonAsync<List<Student>>("api/Student");
+            }
+            else
+            {
+                // Handle error
+            }
+        }
+    }
+}

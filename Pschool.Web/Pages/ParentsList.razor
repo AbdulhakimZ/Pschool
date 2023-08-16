@@ -62,13 +62,10 @@ else
     
     [Inject]
     private NavigationManager NavigationManager { get; set; }
-    [Inject]
-    private HttpClient httpClient { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         // Fetch parents data from the API
-        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7130/weatherforecast");
         parents = await Http.GetFromJsonAsync<List<Parent>>("/api/Parent");
     }
 
@@ -83,11 +80,11 @@ else
 
         if (confirmed)
         {
-            var response = await httpClient.DeleteAsync($"api/Parent/{parentId}");
+            var response = await Http.DeleteAsync($"api/Parent/{parentId}");
 
             if (response.IsSuccessStatusCode)
             {
-                parents = await httpClient.GetFromJsonAsync<List<Parent>>("api/Parent");
+                parents = await Http.GetFromJsonAsync<List<Parent>>("api/Parent");
             }
             else
             {

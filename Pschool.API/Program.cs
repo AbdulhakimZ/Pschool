@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Pschool.API.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,15 @@ builder.Services.AddCors(options =>
                .AllowAnyMethod();
     });
 });
+//builder.Services.AddControllers().AddJsonOptions(options =>
+//{
+//    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+//});
+builder.Services.AddDbContext<PschoolDbContext>(options =>
+{
+    options.UseLazyLoadingProxies(); // Enable lazy loading
+});
+
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

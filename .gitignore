@@ -3,9 +3,8 @@
 ################################################################################
 
 /Pschool.API/bin/Debug/net6.0
+/Pschool.Web/bin/Debug/net6.0
 /Pschool.API/obj
 /Pschool.API/.vs
-/Pschool.Web/bin/Debug/net6.0
 /Pschool.Web/obj
 /Pschool.Web/.vs
-/Pschool.Web/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll

@@ -1,0 +1,120 @@
+﻿@page "/students/create"
+@using Pschool.Web.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject HttpClient Http
+
+
+<h3>Create New Student</h3><hr />
+<EditForm Model="@student" OnValidSubmit="Create" class="row">
+    @*<ValidationSummary />*@
+    <DataAnnotationsValidator />
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <InputText id="FirstName" class="form-control" @bind-Value="student.FirstName" />
+            <ValidationMessage For="@(() => student.FirstName)" />
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <InputText id="LastName" class="form-control" @bind-Value="student.LastName" />
+            <ValidationMessage For="@(() => student.LastName)" />
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <InputText id="Email" class="form-control" @bind-Value="student.Email" />
+            <ValidationMessage For="@(() => student.Email)" />
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="UserName">Username</label>
+            <InputText id="UserName" class="form-control" @bind-Value="student.UserName" />
+            <ValidationMessage For="@(() => student.UserName)" />
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Phone">Phone</label>
+            <InputText id="Phone" class="form-control" @bind-Value="student.Phone" />
+            <ValidationMessage For="@(() => student.Phone)" />
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="BirthDate">Birth Date</label>
+            <InputDate id="BirthDate" class="form-control" @bind-Value="student.BirthDate" />
+            <ValidationMessage For="@(() => student.BirthDate)" />
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="ParentId">Parent</label>
+            @if (parents != null)
+            {
+                <select id="ParentId" class="form-control" @bind="student.ParentId">
+                    @foreach (var parent in parents)
+                    {
+                        <option value="@parent.Id">@parent.FirstName @parent.LastName</option>
+                    }
+                </select>
+            }
+            else
+            {
+                <p>No parents data available.</p>
+            }
+            <ValidationMessage For="@(() => student.ParentId)" />
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</EditForm>
+
+@code {
+    private Student student = new Student();
+    private List<Parent> parents;
+    private EditContext editContext;
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } 
+
+    protected override void OnInitialized()
+    {
+        student = new Student();
+        editContext = new EditContext(student);
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch parents data from the API
+        parents = await Http.GetFromJsonAsync<List<Parent>>("api/Parent");
+    }
+    private async Task Create()
+    {
+        Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(student));
+        var response = await Http.PostAsJsonAsync("https://localhost:7130/api/Student", student);
+        Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(response));
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/students");
+        }
+        else
+        {
+            // Handle error scenario, e.g., show an error message to the user
+        }
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/students");
+    }
+}

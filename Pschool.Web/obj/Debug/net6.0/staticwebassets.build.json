@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sFfAMoil6rS9hRtjYDG3PO6HSoUCtC11jl3u2SFJb18=",
+  "Hash": "MUHyxiMbtgBCy4S4kDOvb/VYEcekHe3Tc1jJUwK0SWM=",
   "Source": "Pschool.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.20\\build\\net6.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Castle.Core.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Castle.Core.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\castle.core\\5.1.0\\lib\\net6.0\\Castle.Core.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.16.ywfc40vyap.js",
@@ -289,6 +306,91 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\lib\\net6.0\\Microsoft.CSharp.dll"
     },
     {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Proxies.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Proxies.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\7.0.10\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Proxies.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Caching.Memory.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -388,7 +490,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
@@ -405,7 +507,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
@@ -473,7 +575,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -490,7 +592,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\lib\\netstandard2.1\\Microsoft.Extensions.Logging.dll"
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Logging.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
@@ -507,7 +609,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\lib\\netstandard2.1\\Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
@@ -524,7 +626,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
@@ -1069,6 +1171,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\lib\\net6.0\\System.Diagnostics.DiagnosticSource.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.EventLog.dll",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Diagnostics.EventLog.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\lib\\net6.0\\System.Diagnostics.EventLog.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll",
@@ -3417,23 +3536,6 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\lib\\net6.0\\WindowsBase.dll"
     },
     {
-      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\++0zn1Hr.gz",
-      "SourceId": "Pschool.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
-    },
-    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\+48XLZLI.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -3536,6 +3638,23 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.timezones.blat"
     },
     {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\+y1O3f+V.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\02L02US+.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -3636,6 +3755,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Uri.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\1O8bvU+I.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Diagnostics.EventLog.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.EventLog.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.EventLog.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\1t09aLtK.gz",
@@ -3944,6 +4080,23 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.Linq.dll"
     },
     {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\5MsZFDrQ.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\5vwzyLLf.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -4044,23 +4197,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Specialized.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\7mIKF0HV.gz",
-      "SourceId": "Pschool.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\7Pd5XerW.gz",
@@ -4265,23 +4401,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\AKTlrMyj.gz",
-      "SourceId": "Pschool.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\AyjSDCCW.gz",
@@ -4860,6 +4979,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Claims.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\h6pgq0v1.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Proxies.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Proxies.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Proxies.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\h7blDF57.gz",
@@ -5559,6 +5695,23 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Channels.dll"
     },
     {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\nXlsVoKC.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\nyggajLU.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -5625,6 +5778,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\OdiQwQjz.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Castle.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Castle.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Castle.Core.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\oMc2neYj.gz",
@@ -5831,24 +6001,7 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
     },
     {
-      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\QJGNNS1+.gz",
-      "SourceId": "Pschool.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\qxnFaH+6.gz",
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\quN9xtUp.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
@@ -5863,6 +6016,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\r0sI6C69.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\r50Q1e6b.gz",
@@ -6033,23 +6203,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.SecureString.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\SbS1nElN.gz",
-      "SourceId": "Pschool.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\SFhNKC7u.gz",
@@ -6256,6 +6409,23 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Timer.dll"
     },
     {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\unn2PA+H.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\UpAp56nP.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -6271,6 +6441,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\UxmJy7y8.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\UzAY9saX.gz",
@@ -6511,6 +6698,23 @@
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\x0ZxxP+S.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\X4YbxpJ+.gz",
       "SourceId": "Pschool.Web",
       "SourceType": "Computed",
@@ -6679,6 +6883,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.StackTrace.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\YhIcTIRj.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\yzgTsD10.gz",
+      "SourceId": "Pschool.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Lucky\\Documents\\angular_project\\NEO\\Pschool\\Pschool.Web\\obj\\Debug\\net6.0\\build-gz\\Z23q7Dtx.gz",

@@ -9,19 +9,19 @@ namespace Pschool.Web.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "First name is required.")]
-        [MaxLength(50, ErrorMessage = "First name cannot exceed 50 characters.")]
+        [MaxLength(50, ErrorMessage = "First name cannot exceed 30 characters.")]
         public string FirstName { get; set; }
 
         [Required(ErrorMessage = "Last name is required.")]
-        [MaxLength(50, ErrorMessage = "Last name cannot exceed 50 characters.")]
+        [MaxLength(50, ErrorMessage = "Last name cannot exceed 30 characters.")]
         public string LastName { get; set; }
 
         [Display(Name = "Username")]
-        [MaxLength(50, ErrorMessage = "Username cannot exceed 50 characters.")]
+        [MaxLength(50, ErrorMessage = "Username cannot exceed 30 characters.")]
         public string? UserName { get; set; }
 
         [EmailAddress(ErrorMessage = "Invalid email address.")]
-        [MaxLength(100, ErrorMessage = "Email address cannot exceed 100 characters.")]
+        [MaxLength(100, ErrorMessage = "Email address cannot exceed 30 characters.")]
         public string? Email { get; set; }
 
         [MaxLength(200, ErrorMessage = "Home address cannot exceed 200 characters.")]

@@ -22,7 +22,7 @@ namespace Pschool.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            return await _context.Students.ToListAsync();
+            return await _context.Students.Include(i=>i.Parent).ToListAsync();
         }
 
         // GET: api/Student/5
