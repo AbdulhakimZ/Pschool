@@ -33,6 +33,7 @@ namespace Pschool.API.Controllers
                 Email = student.Email,
                 Phone = student.Phone,
                 BirthDate = student.BirthDate,
+                ParentId = student.ParentId,
                 Parent = new Parent() { Id=student.Parent.Id, FirstName = student.Parent?.FirstName, LastName = student.Parent?.LastName },
             }).ToList();
             return studentsDTO;

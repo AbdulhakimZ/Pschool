@@ -12,7 +12,25 @@
 }
 else
 {
-    <NavLink style="float:right" class="btn btn-success" href="students/create">Add Student <span class="oi oi-plus" aria-hidden="true"></span></NavLink>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="">
+                <label for="parentFilter">Filter by Parent: </label>
+                <select class="form-control" id="parentFilter" @bind="selectedParentId">
+                    <option value="0">All Parents</option>
+                    @foreach (var parent in parents)
+                    {
+                        <option value="@parent.Id">@parent.FirstName @parent.LastName</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-2">    <NavLink style="float:right" class="btn btn-success" href="students/create">Add Student <span class="oi oi-plus" aria-hidden="true"></span></NavLink></div>
+    </div>
+
+
+
     <table class="table">
         <thead>
             <tr>
@@ -26,20 +44,22 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var student in students)
+            @foreach (var student in filteredStudents)
             {
-                <tr>
-                    <td>@student.FirstName</td>
-                    <td>@student.LastName</td>
-                    <td>@student.UserName</td>
-                    <td>@student.Email</td>
-                    <td>@student.Parent?.FirstName @student.Parent?.LastName</td>
-                    <td>@student.Phone</td>
-                    <td>
-                        <i @onclick="() => EditStudent(student.Id)" class="oi oi-pencil"></i>
-                        <i @onclick="() => DeleteStudent(student.Id)" class="oi oi-trash"></i>
-                    </td>
-                </tr>
+                {
+                    <tr>
+                        <td>@student.FirstName</td>
+                        <td>@student.LastName</td>
+                        <td>@student.UserName</td>
+                        <td>@student.Email</td>
+                        <td>@student.Parent?.FirstName @student.Parent?.LastName</td>
+                        <td>@student.Phone</td>
+                        <td>
+                            <i @onclick="() => EditStudent(student.Id)" class="oi oi-pencil"></i>
+                            <i @onclick="() => DeleteStudent(student.Id)" class="oi oi-trash"></i>
+                        </td>
+                    </tr>
+                }
             }
         </tbody>
     </table>
@@ -47,6 +67,9 @@ else
 
 @code {
     private List<Student> students;
+    private List<Parent> parents;
+    private int selectedParentId = 0;
+    private List<Student> filteredStudents => selectedParentId == 0 ? students : students.Where(student => student.ParentId == selectedParentId).ToList();
     
     [Inject]
     private NavigationManager NavigationManager { get; set; }
@@ -55,8 +78,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // Fetch students data from the API
         students = await Http.GetFromJsonAsync<List<Student>>("/api/Student");
+        parents = students.Select(s => s.Parent).Distinct().ToList();//this is for the filter dropdown
     }
 
     private void EditStudent(int studentId)
@@ -75,10 +98,6 @@ else
             if (response.IsSuccessStatusCode)
             {
                 students = await httpClient.GetFromJsonAsync<List<Student>>("api/Student");
-            }
-            else
-            {
-                // Handle error
             }
         }
     }
