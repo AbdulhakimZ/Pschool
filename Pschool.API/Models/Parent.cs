@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Pschool.API.Models
 {
@@ -18,7 +19,7 @@ namespace Pschool.API.Models
         public string? WorkPhone { get; set; }
         public string? HomePhone { get; set; }
         public DateTime? BirthDate { get; set; }
-
+        //[JsonIgnore]
         public virtual ICollection<Student> Students { get; set; }
     }
 }

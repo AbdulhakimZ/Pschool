@@ -6,6 +6,11 @@ namespace Pschool.Web.Models
 {
     public class Parent
     {
+        public Parent()
+        {
+            Students = new HashSet<Student>();
+        }
+
         public int Id { get; set; }
 
         [Required(ErrorMessage = "First name is required.")]
@@ -44,6 +49,6 @@ namespace Pschool.Web.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? BirthDate { get; set; }
 
-        public ICollection<Student> Students { get; set; } = new List<Student>();
+        public virtual ICollection<Student> Students { get; set; } = new List<Student>();
     }
 }

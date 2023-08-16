@@ -33,6 +33,6 @@ namespace Pschool.Web.Models
         [Required(ErrorMessage = "Parent is required.")]
         public int? ParentId { get; set; }
 
-        public Parent? Parent { get; set; }
+        public virtual Parent? Parent { get; set; }
     }
 }

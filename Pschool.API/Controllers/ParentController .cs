@@ -23,7 +23,28 @@ namespace Pschool.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Parent>>> GetParents()
         {
-            return await _context.Parents.Include(i=>i.Students).ToListAsync();
+            var parents = await _context.Parents.Include(i => i.Students).ToListAsync();
+            //I used  this DTO to serialize Cycles 
+            var parentsDTO = parents.Select(parent => new Parent
+                        {
+                            Id = parent.Id,
+                            FirstName = parent.FirstName,
+                            LastName = parent.LastName,
+                            UserName = parent.UserName,
+                            Email = parent.Email,
+                            HomeAddress = parent.HomeAddress,
+                            Phone1 = parent.Phone1,
+                            WorkPhone = parent.WorkPhone,
+                            HomePhone = parent.HomePhone,
+                            BirthDate = parent.BirthDate,
+                            Students = parent.Students.Select(student => new Student
+                            {
+                                Id=student.Id,
+                                FirstName = student.FirstName,
+                                LastName = student.LastName,
+                            }).ToList()
+                        }).ToList();
+            return parentsDTO;
         }
 
         // GET: api/Parent/5
